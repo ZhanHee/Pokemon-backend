@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 
 COPY package*.json ./
+ENV NPM_CONFIG_REGISTRY=https://registry.npmmirror.com
 RUN npm install
 
 
